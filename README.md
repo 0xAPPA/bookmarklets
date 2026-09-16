@@ -13,6 +13,8 @@ A collection of JavaScript bookmarklets. Each lives in its own directory:
 
 | Name | Description |
 | --- | --- |
+| [text-autofill](text-autofill/) | Fills every empty text-like input and textarea with a type-appropriate dummy value |
+| [file-autofill](file-autofill/) | Attaches a generated dummy file (PNG/JPEG/PDF/text per `accept`) to every empty file input |
 
 ## Install a bookmarklet
 
