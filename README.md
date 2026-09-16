@@ -13,7 +13,6 @@ A collection of JavaScript bookmarklets. Each lives in its own directory:
 
 | Name | Description |
 | --- | --- |
-| [copy-markdown-link](copy-markdown-link/) | Copy the current page as a `[title](url)` markdown link |
 
 ## Install a bookmarklet
 
