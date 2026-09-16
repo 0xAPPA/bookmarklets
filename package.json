@@ -1,0 +1,11 @@
+{
+  "name": "bookmarklets",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  },
+  "devDependencies": {
+    "terser": "^5.36.0"
+  }
+}
