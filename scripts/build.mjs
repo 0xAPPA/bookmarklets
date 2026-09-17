@@ -21,7 +21,8 @@ for (const dir of await readdir(root)) {
     format: { ascii_only: true },
   });
 
-  const out = `javascript:${encodeURI(result.code)}\n`;
+  // encodeURI leaves "#" alone, which would cut the URL off at the fragment.
+  const out = `javascript:${encodeURI(result.code).replace(/#/g, "%23")}\n`;
   await writeFile(join(root, dir, "bookmarklet.min.js"), out);
   console.log(`built ${dir}/bookmarklet.min.js (${out.length} bytes)`);
 }
