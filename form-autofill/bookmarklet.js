@@ -781,6 +781,10 @@
       if (!did || r === 8) break;
       await sleep(300 + r * 250);
     }
+    /* One last look a second later: optional fields often appear just after the
+       form settles. Once only, and uploads stay in the first sweep. */
+    await sleep(1000);
+    if (await sweep(false)) passes++;
     toast(n, passes);
   })();
 })();
